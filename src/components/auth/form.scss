@@ -1,0 +1,14 @@
+.form-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+.form-control{
+    width:90%;
+    margin: 8px auto !important;
+    padding: 3px !important;
+    @media (min-width:720px){
+        width:70%;
+        margin:8px auto !important;
+    }
+}

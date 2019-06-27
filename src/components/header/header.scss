@@ -1,0 +1,63 @@
+$app-bg: #3f51b5;
+$main-text-color: #fff;
+$second-text-color: #4de24d;
+
+nav a {
+	color: $main-text-color;
+	text-decoration: none;
+}
+nav a:hover,
+nav a:active {
+	color: $second-text-color;
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+	// margin: auto;
+	// align-content: center;
+	// align-items: center;
+}
+
+// from angular
+ul {
+	width: 100%;
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav a {
+	text-decoration: none;
+	color: #fff;
+}
+
+nav li button {
+	margin-left: 0.5rem !important;
+	padding: 6px 6px !important;
+}
+
+nav a:hover,
+nav a:active,
+nav .active {
+	color: #4de24d;
+}
+
+.spacer {
+	flex: 1 1 auto;
+}
+
+.username {
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+
+.add-btn {
+	position: absolute;
+	top: 25%;
+	right: 2%;
+	display: block;
+}
