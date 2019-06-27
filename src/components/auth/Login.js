@@ -2,10 +2,7 @@ import React from 'react'
 import PostFormField from './PostFormField';
 import Button from '@material-ui/core/Button';
 import { useStoreActions, useStoreState } from 'easy-peasy'
-
 import './form.scss'
-
-
 
 const Login = (props) => {
     const [initValues] = React.useState({
@@ -17,7 +14,6 @@ const Login = (props) => {
     const user = useStoreState(state => state.user)
     const requestError = useStoreState(state => state.requestError)
     const requestMessage = useStoreState(state => state.requestMessage)
-
     const [formFields, setFormFields] = React.useState(initValues);
     const [fieldError, setFieldError] = React.useState({ email: false, password: false })
 

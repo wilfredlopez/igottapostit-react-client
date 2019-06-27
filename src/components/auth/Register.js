@@ -3,9 +3,8 @@ import PostFormField from './PostFormField';
 import Button from '@material-ui/core/Button';
 import { useStoreActions, useStoreState } from 'easy-peasy'
 import { makeStyles } from '@material-ui/core/styles';
-
-
 import './form.scss'
+
 const initValues = {
     email: '',
     password: '',
@@ -115,7 +114,6 @@ const Register = (props) => {
                         name="username"
                         handleBlur={handleBlur}
                     />
-
                     <PostFormField handleBlur={handleBlur} isError={fieldError.password} errorMsg="Valid password is required" type="password" handleChange={handleChange} value={formFields.password} label="Password" name="password" />
                 </div>
                 <div className="form-control">

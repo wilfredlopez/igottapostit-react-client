@@ -7,8 +7,6 @@ import FilledInput from '@material-ui/core/FilledInput';
 
 
 const PostFormField = ({ handleChange, value, label, name, isError, errorMsg, type, handleBlur }) => {
-
-
     return (
         <FormControl className='form-control' variant="outlined" error={isError}>
             <InputLabel htmlFor={name}>

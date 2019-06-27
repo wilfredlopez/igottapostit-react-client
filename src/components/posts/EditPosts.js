@@ -1,8 +1,5 @@
 import React from 'react'
-
 import Button from '@material-ui/core/Button';
-
-
 import TextField from '@material-ui/core/TextField';
 
 const classes =
@@ -32,24 +29,10 @@ const classes =
 const EditPost = (props) => {
     let post = props.post
     const imageEl = React.useRef()
-
-
     const [title, setTitle] = React.useState(post.title);
     const [content, setContent] = React.useState(post.content);
     const [fieldError] = React.useState({ title: false, content: false, image: false })
     const [image, setImage] = React.useState(post.image)
-
-
-
-    // React.useEffect(() => {
-    //i need to create the state first
-    //     if (created) {
-    //         props.history.push('/')
-    //     }
-    // })
-
-
-
 
     const validate = (name, value) => {
         switch (name) {
@@ -104,16 +87,9 @@ const EditPost = (props) => {
         validate(name, value)
     }
 
-
-
     const pickFile = () => {
         imageEl.current.click()
     }
-
-
-
-
-
 
     return (
         <div style={classes.modalContainer}>
@@ -184,7 +160,6 @@ const EditPost = (props) => {
                         <Button variant="contained" color="primary" type="submit" >UPDATE POST</Button>
                         <Button variant="contained" color="default" type="submit" onClick={() => props.close()} style={{ marginLeft: '8px' }}>Go Back</Button>
                     </div>
-
                     <p className="request-error">"Error"</p>
                 </form>
             </div>

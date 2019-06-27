@@ -1,5 +1,4 @@
 import React from 'react'
-
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Button from '@material-ui/core/Button';
@@ -7,11 +6,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import Fab from '@material-ui/core/Fab';
 import AddIcon from '@material-ui/icons/Add';
 import { useStoreState, useStoreActions } from 'easy-peasy'
-
 import { NavLink } from 'react-router-dom'
-
 import './header.scss'
-
 
 const useStyles = makeStyles(theme => ({
     fab: {

@@ -18,8 +18,16 @@ import Input from '@material-ui/core/Input';
 
 import { useStoreState, useStoreActions } from 'easy-peasy'
 
+import config from '../../config/index'
 
-const serverUrl = 'http://localhost:5000'
+
+let serverUrl = ''
+
+if (config.MODE === 'development') {
+    serverUrl = config.SERVER_URL
+}
+
+
 
 const useStyles = makeStyles(theme => ({
     root: {

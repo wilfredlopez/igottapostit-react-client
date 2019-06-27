@@ -3,7 +3,15 @@ import { thunk } from 'easy-peasy'
 
 
 
-const SERVER_URL = 'http://localhost:5000'
+import config from '../config'
+
+let SERVER_URL = ''
+
+if (config.MODE === 'development') {
+    SERVER_URL = config.SERVER_URL
+}
+
+
 
 export default {
     fetchPosts: thunk(async (actions, token = null) => {

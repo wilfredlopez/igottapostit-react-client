@@ -131,7 +131,6 @@ const CreatePost = (props) => {
                         value={title}
                         style={{ margin: 8 }}
                         placeholder="add post title here"
-                        helperText="Full width!"
                         fullWidth
                         margin="normal"
                         error={fieldError.title}
