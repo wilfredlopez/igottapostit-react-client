@@ -7,7 +7,7 @@
     "@material-ui/icons": "^4.2.1",
     "@material/top-app-bar": "^2.3.0",
     "easy-peasy": "^2.5.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router": "^5.0.1",
